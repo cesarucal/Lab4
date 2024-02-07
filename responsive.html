@@ -18,7 +18,7 @@ Description : Responsive Layouts.
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel = "stylesheet" href = "menu.css">
-
+<!--
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
 		div {
@@ -37,6 +37,7 @@ Description : Responsive Layouts.
 			border: 1px solid yellow;	
 		}		
 	</style>
+	-->
 
     <style>
 		body { margin: 0; padding: 0;}
@@ -49,7 +50,6 @@ Description : Responsive Layouts.
 		
 		.row { 
 			display: block;
-			/*I need some CSS codes.*/		
 		}
 
 		.large, .medium, .small {
@@ -61,21 +61,17 @@ Description : Responsive Layouts.
 		.gap {
 			height: 50px;
 			clear: both;
-			/*I need some CSS codes.*/
 		}
 
 		@media screen and (min-width: 769px) {			
 			.large { 
 				width: 100%;
-				/*I need some CSS codes.*/
 			}
 			.medium { 
 				width: 70%;
-				/*I need some CSS codes.*/
 			}
 			.small { 
 				width: 30%;
-				/*I need some CSS codes.*/
 			 }
 		}
 
@@ -89,6 +85,15 @@ Description : Responsive Layouts.
 			.small { 
 				width: 40%;
 			 }
+
+			.menu {
+				width: auto;
+				float: none;
+				clear: both;
+			}
+			.main {
+				margin-left: 0%;
+			}
         }
 
         @media screen and (max-width: 480px) {
@@ -96,7 +101,15 @@ Description : Responsive Layouts.
 				width: 100%;
 			}
 
-			/*I need some CSS codes.*/
+			.menu{
+				width:auto;
+				float:none;
+				clear:both;
+			}
+
+			h1{
+				font-size: 18px;
+			}
         }
 
         
