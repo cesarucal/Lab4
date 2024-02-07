@@ -1,15 +1,4 @@
-<!--
-=========================================================
-Name        : index.html
-Assignment  : Lab 4 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
-Description : Flex Layouts.
-=========================================================
--->
-<!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <title>Responsive Webpage Layout</title>
 	<!--
 		Ensure that your HTML file includes the viewport meta tag in the <head> section. 
@@ -69,28 +58,19 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
-			display: flex;
-			flex-direction: column;
-			min-height: 100vh;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			/*I need some CSS codes.*/
-			display: flex;
-			flex-direction: column;
 		}
         .main { 
 			padding: 15px; 
 			/*I need some CSS codes.*/
-			flex: 1;
 		}
         
         .news-item { padding: 10px; }
         .row { 
 			/*I need some CSS codes.*/
-			display: flex;
-    		flex-wrap: wrap;
-   	 		margin-bottom: 15px;
 		}
         
 
@@ -98,65 +78,31 @@ Description : Flex Layouts.
             .menu { width: 150px; }     
 			.large { 
 				/*I need some CSS codes.*/
-				flex: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				flex: 70%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
-				flex: 30%;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
 			.body { 
 				/*I need some CSS codes.*/
-				flex-direction: column;
 			}
             .menu ul { 
 				/*I need some CSS codes.*/
-				display: flex;
-				flex-direction: row;
-   				justify-content: center;
 			 }            
             /*I need some CSS codes.*/
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
-            .large, .medium, .small { 
+            .medium, .small { 
 				/*I need some CSS codes.*/
-				flex: 100%;
-			 }
-
-			 .body {
-				flex-direction: column; 
-			}
-		
-			.menu {
-				order: -1;
-			}
-			 .news-item header h1{
-				font-size: 18px;
 			 }
         }
-		div {
-			border: 1px dashed gray;    
-		}
-		.row{ 
-			border: 1px solid red;         
-		}
-		.large {
-			border: 1px solid blue;    
-		}
-		.medium {
-			border: 1px solid green;    
-		}
-		.small {
-			border: 1px solid yellow;    
-		}
     </style>
 </head>
 <body>
@@ -213,7 +159,7 @@ Description : Flex Layouts.
 					<!-- Medium news item -->
 					<div class="medium news-item">
 						<header>
-							<h1>Wassim Belghache and Cesar Garcia Takes a Historic Spacewalk Near the ISS</h1>
+							<h1>Your Name Takes a Historic Spacewalk Near the ISS</h1>
 						</header>
 						<img src="images/medium.jpg" alt="Medium Image">
 						<article>
@@ -236,5 +182,6 @@ Description : Flex Layouts.
             </footer>
         </div>
     </div>
-</body>
-</html>
+
+
+</body></html>
