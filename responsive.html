@@ -48,6 +48,7 @@ Description : Responsive Layouts.
         .news-item { padding: 10px; }
 		
 		.row { 
+			display: block;
 			/*I need some CSS codes.*/		
 		}
 
@@ -57,7 +58,8 @@ Description : Responsive Layouts.
 		}
 		
 		.gap {
-			height: 50px
+			height: 50px;
+			clear: both;
 			/*I need some CSS codes.*/
 		}
 
@@ -67,11 +69,11 @@ Description : Responsive Layouts.
 				/*I need some CSS codes.*/
 			}
 			.medium { 
-				width: 70%
+				width: 70%;
 				/*I need some CSS codes.*/
 			}
 			.small { 
-				width: 30%
+				width: 30%;
 				/*I need some CSS codes.*/
 			 }
 		}
@@ -79,17 +81,13 @@ Description : Responsive Layouts.
         @media screen and (max-width: 768px) {
 			.large { 
 				width: 100%;
-				/*I need some CSS codes.*/
 			}
 			.medium { 
-				width: 60%
-				/*I need some CSS codes.*/
+				width: 60%;
 			}
 			.small { 
-				width: 40%
-				/*I need some CSS codes.*/
+				width: 40%;
 			 }
-            /*I need some CSS codes.*/
         }
 
         @media screen and (max-width: 480px) {
@@ -97,11 +95,7 @@ Description : Responsive Layouts.
 				width: 100%;
 			}
 
-			.menu{
-				display: inline;
-				float: none;
-				background-color: #e6e6e6; 
-			}
+			.menu{width:100%;}
 			/*I need some CSS codes.*/
         }
 
