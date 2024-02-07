@@ -69,15 +69,15 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 0 20px;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			/*I need some CSS codes.*/
 			display: flex;
-			flex-wrap: wrap;
+			flex-direction: column;
 		}
         .main { 
 			padding: 15px; 
@@ -90,7 +90,7 @@ Description : Flex Layouts.
 			/*I need some CSS codes.*/
 			display: flex;
     		flex-wrap: wrap;
-   	 		margin: -10px;
+   	 		margin-bottom: 15px;
 		}
         
 
@@ -98,31 +98,65 @@ Description : Flex Layouts.
             .menu { width: 150px; }     
 			.large { 
 				/*I need some CSS codes.*/
+				flex: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				flex: 70%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				flex: 30%;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
 			.body { 
 				/*I need some CSS codes.*/
+				flex-direction: column;
 			}
             .menu ul { 
 				/*I need some CSS codes.*/
+				display: flex;
+				flex-direction: row;
+   				justify-content: center;
 			 }            
             /*I need some CSS codes.*/
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
-            .medium, .small { 
+            .large, .medium, .small { 
 				/*I need some CSS codes.*/
+				flex: 100%;
+			 }
+
+			 .body {
+				flex-direction: column; 
+			}
+		
+			.menu {
+				order: -1;
+			}
+			 .news-item header h1{
+				font-size: 18px;
 			 }
         }
+		div {
+			border: 1px dashed gray;    
+		}
+		.row{ 
+			border: 1px solid red;         
+		}
+		.large {
+			border: 1px solid blue;    
+		}
+		.medium {
+			border: 1px solid green;    
+		}
+		.small {
+			border: 1px solid yellow;    
+		}
     </style>
 </head>
 <body>
