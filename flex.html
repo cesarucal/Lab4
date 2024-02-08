@@ -5,9 +5,9 @@
 		This tag is essential for responsive design as it tells the browser how to control the page's dimensions and scaling.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<!-- 
 	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
+		Remove borders at the end, they have been add just for detecting positions of items*/	
 		div {
 			border: 1px dashed gray;	
 		}
@@ -24,7 +24,7 @@
 			border: 1px solid yellow;	
 		}		
 	</style>
-
+-->
 	<style>
 		/* CSS for menu. You don't need to touch this part */
 		.menu { background-color: #e6e6e6; }
@@ -56,54 +56,72 @@
 		}
         body { margin: 0; padding: 0; }
         img { max-width: 100%; height: auto; }
-        .container { 
-			/*I need some CSS codes.*/
+        .container {
+			margin: 0 auto;
+			max-width: 1200px;
+			padding: 0;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
-		.body { 
-			/*I need some CSS codes.*/
+		.body {
+			display: flex;
+			flex-direction: column;
 		}
         .main { 
-			padding: 15px; 
-			/*I need some CSS codes.*/
+			padding: 15px;
+			flex: 1;
 		}
         
         .news-item { padding: 10px; }
-        .row { 
-			/*I need some CSS codes.*/
+        .row {
+			display: flex;
+        	flex-wrap: wrap;
+        	margin-bottom: 15px;
+			justify-content: space-between;
 		}
         
 
         @media screen and (min-width: 769px) {
-            .menu { width: 150px; }     
+            .menu { width: 150px; } 
+			.body {
+				flex-direction: row;
+			}    
 			.large { 
-				/*I need some CSS codes.*/
+				flex: 100%;
 			}
-			.medium { 
-				/*I need some CSS codes.*/
+			.medium {
+				flex: 70%;
 			}
-			.small { 
-				/*I need some CSS codes.*/
+			.small {
+				flex: 30%;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
-			.body { 
-				/*I need some CSS codes.*/
+			.body {
+				flex-direction: column;
 			}
-            .menu ul { 
-				/*I need some CSS codes.*/
-			 }            
-            /*I need some CSS codes.*/
+            .menu ul {
+				display: flex;
+                flex-direction: row;
+			 }
+			.large { 
+				flex: 100%;
+			}
+			.medium {
+				flex: 60%;
+			}
+			.small {
+				flex: 40%;
+			 }  
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
-            .medium, .small { 
-				/*I need some CSS codes.*/
+            .medium, .small {
+				flex: 100%;
 			 }
         }
-    </style>
+</style>
 </head>
 <body>
     <div class="container">
